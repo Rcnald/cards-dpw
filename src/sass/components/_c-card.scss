@@ -1,0 +1,53 @@
+$component-name:'c-card';
+
+.#{$component-name}{
+    @apply rounded-md text-white flex flex-col flex-[0.6] h-full w-full justify-center absolute inset-0 px-[1.875rem] py-[3.75rem];
+
+    &--instagram{
+        @apply bg-instagram-bg;
+
+        .c-button{
+            @apply bg-instagram-btn;
+
+            &:hover{
+                @apply bg-instagram-btn-hover
+            }
+        }
+    }
+
+    &--linkedin{
+        @apply bg-linkedin-bg;
+
+        .c-button{
+            @apply bg-linkedin-btn text-gray-text;
+
+            &:hover{
+                @apply bg-linkedin-btn-hover
+            }
+        }
+    }
+
+    &--twitter{
+        @apply bg-twitter-bg;
+
+        .c-button{
+            @apply bg-twitter-btn text-gray-text;
+
+            &:hover{
+                @apply bg-twitter-btn-hover
+            }
+        }
+    }
+
+    &__content{
+        @apply flex flex-col gap-10;
+    }
+
+    &__title{
+        @apply font-normal leading-[1] text-3xl;
+
+        &-emphasis{
+            @apply inline-block flex-1 text-[210%] font-bold w-full;
+        }
+    }
+}

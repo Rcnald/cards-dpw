@@ -1,0 +1,13 @@
+$component-name:'c-button';
+
+.#{$component-name}{
+    @apply bg-blue-btn-primary rounded-full text-white inline-block max-w-[13.125rem] px-[0.9375rem] py-[0.4688rem] text-center transition-all ease-in duration-[90ms];
+
+    &:hover{
+        @apply bg-blue-btn-primary-hover transition-all ease-out duration-[90ms]
+    }
+   
+    &:active{
+        @apply translate-y-[0.0938rem]
+    }
+}

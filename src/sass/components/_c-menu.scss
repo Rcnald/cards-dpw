@@ -1,0 +1,5 @@
+$component-name: 'c-menu';
+
+.#{$component-name}{
+    @apply flex items-end h-full absolute m-0 px-0 py-2 bottom-0 right-0 w-6;
+}

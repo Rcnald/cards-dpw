@@ -1,0 +1,5 @@
+$layout-name: 'l-main';
+
+.#{$layout-name}{
+    @apply bg-white rounded-md h-[27rem] w-[48rem] p-[3.75rem] relative flex box-shadow;
+}
